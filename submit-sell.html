@@ -243,9 +243,163 @@
                                             <option>Other</option>                                            
                                         </select>
                                     </div>
-                                </div>     
-                            </div>
-                        </div>
+                                </div>  
+                                  
+                                </div>
+                                <!-- Location Start -->
+                                <div class="main-title-2">
+                                    <h1><span>LOCATION</span></h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Address line 1</label>
+                                            <input type="text" class="input-text" name="your name" placeholder="Address line 1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Address line 2</label>
+                                            <input type="text" class="input-text" name="your name" placeholder="Address line 2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <select class="search-fields form-control" onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" required>
+                                        </select>  
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select id ="state" class="form-control search-fields" required></select> 
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <input type="text" class="input-text" maxlength="6" name="your name" placeholder="Pincode">
+                                        </div>
+                                </div>                               
+                                </div>
+                                <!-- Location End -->
+
+                                <!-- Additional Information -->
+                                <div class="main-title-2">
+                                        <h1><span>Aditional Information</span></h1>
+                                </div>
+                                <div class="form-group">
+                                        <div class="checkbox checkbox-theme checkbox-circle">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1">
+                                                Water Availability
+                                                </label>
+                                        </div>
+                                        <div class="checkbox checkbox-theme checkbox-circle">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1">
+                                                Power Backup
+                                                </label>
+                                        </div>
+                                        <div class="checkbox checkbox-theme checkbox-circle">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1">
+                                                Parking
+                                                </label>
+                                        </div>
+                                        <div class="checkbox checkbox-theme checkbox-circle">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1">
+                                                Exclusive Property
+                                                </label>
+                                        </div>
+                                </div>
+                                        <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Landmark</label>
+                                                        <input type="text" class="input-text" name="your name" placeholder="Enter Landmark">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Maintainance Charges</label>
+                                                        <input type="text" class="input-text" name="your name" placeholder="Enter Amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Building Age </label>
+                                                                <select class="selectpicker search-fields" name="years">
+                                                                    <option>0-1 Years</option>
+                                                                    <option>0-5 Years</option>
+                                                                    <option>0-10 Years</option>
+                                                                    <option>0-20 Years</option>
+                                                                    <option>0-40 Years</option>
+                                                                    <option>40+Years</option>
+                                                                </select>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>RERA ID</label>
+                                                                <input type="text" class="input-text" name="your name" placeholder="Enter ID">
+                                                            </div>
+                                                     </div>
+                                                 </div>   
+                                                 <div class="row">
+                                                        <div class="col-md-6 col-sm-6">
+                                                                <div class="form-group">
+                                                                        <label>Authority Approval</label>
+                                                                        <select class="selectpicker search-fields" name="years">
+                                                                            <option>Yes</option>
+                                                                            <option>No</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>  
+                                                        <div class="col-md-6 col-sm-6">
+                                                                <div class="form-group">
+                                                                        <label>Registry Status</label>
+                                                                        <select class="selectpicker search-fields" name="years">
+                                                                            <option>Verbal contract</option>
+                                                                            <option>Preparation of contract</option>
+                                                                            <option>Pay stamp duty</option>
+                                                                            <option>Execute and register sale deed</option>
+                                                                            <option>Property Mutation</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>  
+                                                 </div>    
+                                                    <div class="row">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label>Expected Price</label>
+                                                                        <input type="text" class="input-text" name="your name" placeholder="Enter Amount">
+                                                                    </div>
+                                                                </div>
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>Rental Value</label>
+                                                                    <input type="text" class="input-text" name="your name" placeholder="Enter Amount">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                    </div> 
+                                                    <div >
+                                                            <div class="form-group">
+                                                                    <label>Description</label>
+                                                                    <textarea class="form-control" placeholder="Add Description"></textarea>
+                                                            </div>
+                                                    </div>          
+                                </div>             
                     </form>
                 </div>
             </div>
@@ -274,6 +428,9 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/maps.js"></script>
 <script src="js/app.js"></script>
+<script src="js/cities.js"></script>
+<script src="js/cities.js"></script>
+<script language="javascript">print_state("sts");</script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
