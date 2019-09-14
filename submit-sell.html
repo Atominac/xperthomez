@@ -60,8 +60,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="notification-box">
-                    <h3>Don't Have an Account?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan.</p>
+                    <h2>Don't Have an Account?</h2>
                 </div>
             </div>
             <div class="col-md-12">
@@ -76,17 +75,27 @@
                                 <input type="text" class="input-text" name="your name" placeholder="Property Title">
                             </div>
                             <div class="row">
-                            	<div class="col-md-12">
+                            	<div class="col-md-6">
                             		<div class="form-group">
                                         <label>Property Type</label>
-                                        <select class="selectpicker search-fields" name="commercial">
+                                        <select class="selectpicker search-fields ptype" name="commercial">
                                             <option>Commercial</option>
                                             <option>Residential</option>
                                         </select>
                                     </div>
                             	</div>
+                            	<div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Property Status</label>
+                                        <select class="selectpicker search-fields" name="rtm">
+                                            <option>RTM</option>
+                                            <option>UC</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
+                              <div class="restype">
                             	<div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label>Residential-Type</label>
@@ -100,6 +109,20 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Project Name</label>
+                                        <input type="text" class="input-text" name="project-name" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 ">
+                                    <div class="form-group">
+                                        <label>Accomodation</label>
+                                        <input type="text" class="input-text" name="accomodation" placeholder="2bhk etc.">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="comtype">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label>Commercial-Type</label>
@@ -111,31 +134,16 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <label>Status</label>
-                                        <select class="selectpicker search-fields" name="for-sale">
-                                            <option>For Sale</option>
-                                            <option>For Rent</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="form-group">
-                                        <label>Accomodation</label>
-                                        <input type="text" class="input-text" name="accomodation" placeholder="2Bhk etc.">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <label>Project Name</label>
                                         <input type="text" class="input-text" name="project-name" placeholder="">
                                     </div>
                                 </div>
-
+                              </div>	
+                                   
                             </div>
+                           
                             <div class="row">                                
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
@@ -253,7 +261,9 @@
     </div>
 </div>
 
-
+<!--submit property js-->
+  <script type="text/javascript" src="submit-info.js" >
+  </script>
 <!-- Copy end right-->
 
 <script src="js/jquery-2.2.0.min.js"></script>
