@@ -101,34 +101,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                              <div class="restype">
-                            	<div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <label>Residential-Type</label>
-                                        <select class="selectpicker search-fields" name="apartment">
-                                            <option>Apartment</option>
-                                            <option>Flat</option>
-                                            <option>Builder Floor</option>
-                                            <option>Land</option>
-                                            <option>House</option>
-                                            <option>Villa</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="form-group">
-                                        <label>Project Name</label>
-                                        <input type="text" class="input-text" name="project-name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 ">
-                                    <div class="form-group">
-                                        <label>Accomodation</label>
-                                        <input type="text" class="input-text" name="accomodation" placeholder="2bhk etc.">
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="comtype">
+                                <div class="comtype">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label>Commercial-Type</label>
@@ -146,10 +119,44 @@
                                         <input type="text" class="input-text" name="project-name" placeholder="">
                                     </div>
                                 </div>
-                              </div>	
+                              </div>   
+                              <div class="restype">
+                            	<div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Residential-Type</label>
+                                        <select class="selectpicker search-fields resland" name="apartment">
+                                            <option>Apartment</option>
+                                            <option>Flat</option>
+                                            <option>Builder Floor</option>
+                                            <option>Land</option>
+                                            <option>House</option>
+                                            <option>Villa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 ">
+                                    <div class="form-group">
+                                        <label>Project Name</label>
+                                        <input type="text" class="input-text" name="project-name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 changes">
+                                    <div class="form-group ">
+                                        <label>Accomodation</label>
+                                        <input type="text" class="input-text"  name="accomodation" placeholder="2bhk etc.">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 landsize">
+                                    <div class="form-group ">
+                                        <label>Size</label>
+                                        <input type="text" class="input-text" id="ab" name="accomodation" placeholder="Sqft">
+                                    </div>
+                                </div>
+                              </div>
                                    
                             </div>
                            
+                         <div class="landselect">
                             <div class="row">                                
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
@@ -257,9 +264,10 @@
                                             <option>Other</option>                                            
                                         </select>
                                     </div>
-                                </div>  
+                                </div> 
+                                </div> 
                                   
-                                </div>
+                             </div>
                                 <!-- Location Start -->
                                 <div class="main-title-2">
                                     <h1><span>LOCATION</span></h1>
@@ -297,10 +305,10 @@
                                 <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <label>Pincode</label>
-                                            <input type="text" class="input-text" maxlength="6" name="your name" placeholder="Pincode">
+                                            <input type="text" class="input-text" onkeypress='return event.charCode>=48 && event.charCode<=57' maxlength=6  name="your name" placeholder="Pincode">
                                         </div>
                                 </div>                               
-                                </div>
+                             </div>
                                 <!-- Location End -->
 
                                 <!-- Additional Information -->
