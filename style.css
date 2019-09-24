@@ -768,6 +768,15 @@ input[type=checkbox]:checked + label:before {
     margin: 3px 20px;
 }
 
+.btn-lyp{
+    background-color: white;
+    color: red;
+
+}
+#myModal{
+    z-index: 12000;
+}
+
 .mega-dropdown-menu .form-group {
     margin-bottom: 3px;
 }
